@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/roomAvatar.module.css";
+import styles from "../styles/roomAvatar.module.scss";
 import Router, { useRouter } from "next/router";
 import Image from "next/image";
 const RoomAvatar = ({ id, avatar, name }) => {

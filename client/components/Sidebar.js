@@ -7,22 +7,22 @@ const Sidebar = () => {
     const router = useRouter();
     const dummyChannels = [
         {
-            id: 1,
+            roomId: 1,
             name: "general",
             avatar: avatar1,
         },
         {
-            id: 2,
+            roomId: 2,
             name: "NFTs",
             avatar: avatar1,
         },
         {
-            id: 1,
+            roomId: 3,
             name: "Crypto",
             avatar: avatar1,
         },
         {
-            id: 1,
+            roomId: 4,
             name: "buildspace",
             avatar: avatar1,
         },
