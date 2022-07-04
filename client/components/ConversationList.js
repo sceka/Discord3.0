@@ -4,6 +4,7 @@ import Image from "next/image";
 import friends from "../statics/frineds.webp";
 import nitro from "../statics/nitro.webp";
 import avatar1 from "../statics/avatar.webp";
+import DmCard from "./DmCard";
 const ConversationList = () => {
     const dummyDms = [
         {
@@ -27,6 +28,7 @@ const ConversationList = () => {
             avatar: avatar1,
         },
     ];
+    const [dms, setDms] = useState(dummyDms);
     return (
         <div className={styles.conversations}>
             <div className={styles.conversationsListTop}>
@@ -61,6 +63,15 @@ const ConversationList = () => {
                     <p>Nitro</p>
                 </div>
                 <div className={styles.dmTitle}>Direct Messages</div>
+                {dms.map((dm, index) => (
+                    <DmCard
+                        key={index}
+                        name={dm.name}
+                        id={dm.id}
+                        avatar={dm.avatar}
+                        status="online"
+                    />
+                ))}
             </div>
         </div>
     );
