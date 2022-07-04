@@ -21,7 +21,7 @@
 }
 
 body {
-    background: var(--deep-grey);
+    background: #202225;
     font-size: var(--font-size);
     color: var(--hover-light-grey-color);
 }
